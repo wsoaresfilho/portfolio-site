@@ -1,5 +1,59 @@
 /* My custom styles for the Project: Build a Portfolio */
 
-h1 {
-    color: red;
+body {
+    color: #2d3c49;
+    font-family: 'Kanit', sans-serif;
+    padding-top: 50px;
+}
+
+.navbar {
+    background-color: #2d3c49;
+    border: 0;
+    border-radius: 0;
+}
+
+header {
+    text-transform: uppercase;
+}
+
+.logo {
+    width: 60px;
+}
+
+ .header-titles {
+    font-weight: 200;
+    text-align: right;
+}
+
+hr {
+    border-top: 5px solid #7d97ad;
+    margin: 10px 0 20px;
+}
+
+.featured-title {
+    color: #7d97ad;
+}
+
+.featured-blocks h3 {
+    text-transform: uppercase;
+}
+
+a {
+    color: #2d3c49;
+}
+
+#featured-work img {
+    margin: auto;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 30px;
+    }
 }
