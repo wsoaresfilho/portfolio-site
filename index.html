@@ -75,7 +75,12 @@
         <div class="container">
             <div class="row">
                 <div id="main-content" class="col-xs-12" data-container="body" data-toggle="popover" data-placement="bottom" data-content="This is a tooltip to help understand the essence of the image.">
-                    <img class="img-responsive" src="img/portfolio-1940_large_2x.jpg" srcset="img/portfolio-1940_large_2x.jpg 2x, img/portfolio-970_large_1x.jpg, img/portfolio-500_small.jpg 500w" alt="Portfolio Image">
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="img/portfolio-500_small.jpg">
+                        <source media="(max-width: 1940px)" srcset="img/portfolio-1940_large_2x.jpg 2x, img/portfolio-970_large_1x.jpg">
+                        <img class="img-responsive" src="img/portfolio-1940_large_2x.jpg" alt="Portfolio Image">
+                    </picture>
+
                 </div>
             </div>
         </div>
